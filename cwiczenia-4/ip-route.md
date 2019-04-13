@@ -13,8 +13,8 @@ ip
 -------------------------
 | subcommand    |  polecenie   | opis  |
 | ------------- |:-------------| :---------------| 
-|   ``route``    |                               | |
-|               |   ``ip route add``             | |
+|   ``route``    |  ``ip route``                          |wyświetlenie informacji  |
+|    ``ip route``           |   ``ip route add``             |dodanie trasy |
 
 
 Zadanie
