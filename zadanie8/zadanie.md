@@ -20,9 +20,9 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
  
  Przygotowanie PC0
  ----------
- *eth0 : Zapewnia dostawca
- *Nadanie adresu ip eth1: ip addr add 172.22.160.1/23 dev enp0s8
- *Nadananie adresu ip eth2 : ip addr add 172.22.128.1/19 dev enp0s9
+ * eth0 : Zapewnia dostawca
+ * Nadanie adresu ip eth1: ip addr add 172.22.160.1/23 dev enp0s8
+ * Nadananie adresu ip eth2 : ip addr add 172.22.128.1/19 dev enp0s9
  Postawienie interfejsów:
  -ip link set enp0s3 up
  -ip link set enp0s8 up
