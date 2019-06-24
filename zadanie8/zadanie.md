@@ -15,3 +15,4 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
  --------------
  | Sieć |  Adres   | Zakres | Adres Rozgłoszeniowy   | 
  | --------- |-------------|  --------- |:-------------| 
+ |LAN1|172.22.160.0/23|172.22.160.1 - 172.22.161.254|172.22.161.255|
