@@ -20,25 +20,25 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
  
  Przygotowanie PC0
  ----------
- eth0 : Zapewnia dostawca
- Nadanie adresu ip eth1: ip addr add 172.22.160.1/23 dev enp0s8
- Nadananie adresu ip eth2 : ip addr add 172.22.128.1/19 dev enp0s9
+ -eth0 : Zapewnia dostawca
+ -Nadanie adresu ip eth1: ip addr add 172.22.160.1/23 dev enp0s8
+ -Nadananie adresu ip eth2 : ip addr add 172.22.128.1/19 dev enp0s9
  Postawienie interfejsów:
- ip link set enp0s3 up
- ip link set enp0s8 up
- ip link set enp0s9 up
- Uruchomienie ip forwarding : echo 1 >/proc/sys/net/ipv4/ip_forward
- Masquerade LAN1 : iptables -t nat -A POSTROUTING -s 172.22.160.0/23 -o enp0s3 -j MASQUERADE
- Masquerade LAN2: iptables -t nat -A POSTROUTING -s 172.22.128.0/19 -o enp0s3 -j MASQUERADE
+ -ip link set enp0s3 up
+ -ip link set enp0s8 up
+ -ip link set enp0s9 up
+ -Uruchomienie ip forwarding : echo 1 >/proc/sys/net/ipv4/ip_forward
+ -Masquerade LAN1 : iptables -t nat -A POSTROUTING -s 172.22.160.0/23 -o enp0s3 -j MASQUERADE
+ -Masquerade LAN2: iptables -t nat -A POSTROUTING -s 172.22.128.0/19 -o enp0s3 -j MASQUERADE
  
   Przygotowanie PC1
  ----------
- Nadanie adresu ip : ip addr add 172.22.160.2/23 dev enp0s3
- Ustawienie routingu : ip route add default via 172.22.160.1 dev enp0s3
+ -Nadanie adresu ip : ip addr add 172.22.160.2/23 dev enp0s3
+ -Ustawienie routingu : ip route add default via 172.22.160.1 dev enp0s3
  
    Przygotowanie PC2
  ----------
  
- Nadanie adresu ip : ip addr add 172.22.128.2/19 dev enp0s3
- Ustawienie routingu : ip route add default via 172.22.128.1 dev enp0s3
+ -Nadanie adresu ip : ip addr add 172.22.128.2/19 dev enp0s3
+ -Ustawienie routingu : ip route add default via 172.22.128.1 dev enp0s3
  
