@@ -42,4 +42,4 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
  * Nadanie adresu ip : ip addr add 172.22.128.2/19 dev enp0s3
  * Ustawienie routingu : ip route add default via 172.22.128.1 dev enp0s3
  
-![zadanie 8].(diag.png)
+![zadanie 8](diag.png)
